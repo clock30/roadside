@@ -1,0 +1,476 @@
+@import url('typography.css');
+@import url('reset.css');
+
+body
+{
+ background-color:#f8f8f8;
+ margin: auto;
+ width: 100%;
+}
+
+h1, h2
+{
+ margin: 0px;
+}
+
+div#status-bar
+{
+ background: url('../img/status-bar-bg.png') repeat-x;
+ border-bottom: 2px groove #ffffff;
+ height: 40px;
+ width: 100%;
+}
+
+div#status-bar-content
+{
+ margin: 10px auto 0px auto;
+ width: 800px;
+}
+
+div#status-bar-commands
+{
+ width:400px;
+}
+
+form#search-form
+{
+ float: right;
+ width: 200px;
+ 
+}
+
+p#welcome
+{
+ float: left;
+ padding-top: 7px;
+ width: 150px;
+ font-size: 12px;
+ margin: 0px;
+}
+
+p#action-bar
+{
+ background: url('../img/action-bar-bg.png') no-repeat;
+ height: 14px;
+ margin: 0px 0px 0px 200px;
+ padding: 8px 28px;
+ width: 154px;
+ font-size: 12px;
+}
+
+p#action-bar a:before
+{
+ content:'| '
+}
+
+p#action-bar a[title="License"]:after
+{
+ content:' |';
+}
+
+form#search-form input[type="text"]
+{
+ 
+ background: url('../img/search-field.png') no-repeat;
+ border: none;
+ height: 22px;
+ padding: 3px 0px 0px 30px;
+ width: 170px;
+ margin: 0px;
+}
+
+form#search-form input[type="submit"]
+{
+ display: none;
+}
+
+p#af
+{
+ margin-top: 0px;
+}
+
+div#header
+{
+ background: url('../img/header-image.jpg') no-repeat;
+ background-color: #6eb9cc;
+ border-bottom: 2px ridge #ffffff;
+ height: 248px;
+ width: 100%
+}
+
+div#logo
+{
+ margin: auto;
+ padding-top: 35px;
+ width: 800px;
+}
+
+div#content
+{
+ margin: auto;
+ padding-bottom: 50px;
+ position: relative;
+ width: 800px;
+}
+
+div#content-top-shadow
+{
+ background: url('../img/content-shadow-top.png') repeat-x;
+ height: 20px;
+ width: 100%;
+}
+
+div#content-shadow-bottom
+{
+ background: url('../img/content-shadow-bottom.png') repeat-x;
+ height: 20px;
+ width: 100%;
+ clear: both;
+}
+
+div#page-wrapper
+{
+ background-color: #ffffff;
+ border: 1px solid #bababa;
+ clear: both;
+ height: 233px;
+ margin-top: 75px;
+ overflow: hidden;
+ padding: 15px;
+ width: 768 px;
+}
+
+div#slideshow
+{
+ border-right: 1px solid #b2b2b2;
+ float: left;
+ padding-right: 15px;
+ width: 375px;
+}
+
+div#slides
+{
+ border: 1px solid #a7a7a7;
+ height: 200px;
+ width: 370px;
+}
+
+div#slides a.thumb
+{
+ display: none;
+}
+
+div#slides a.default-slide
+{
+ display: block;
+}
+
+div#slideshow-commands
+{
+ background: url('../img/commands-bg.png') no-repeat;
+ height: 19px;
+ position: relative;
+ left: 15px;
+ padding: 3px 25px;
+ width: 290px;
+}
+
+a#previous-slide
+{
+ background: url('../img/leftstrelka.png');
+ display: block;
+ float: left;
+ height: 12px;
+ width: 11px;
+ margin-top: 2px;
+ text-indent: -9000px;
+}
+
+a#next-slide
+{
+ background: url('../img/rightstrelka.png');
+ display: block;
+ float: right;
+ height: 12px;
+ width: 11px;
+ margin-top: 2px;
+ text-indent: -9000px;
+}
+
+div#slideshow-commands h4
+{
+ margin-top: 1px;
+ width: 100%;
+}
+
+div#message
+{
+ margin-left: 410px;
+ width: 350px;
+}
+
+div#message h3
+{
+ margin-bottom: 20px;
+}
+
+p#contact-info span
+{
+ display: block;
+}
+
+span#phone
+{
+ background: url('../img/phone.png') no-repeat;
+ float: left;
+ margin-top: 25px;
+ padding-left: 35px;
+ width: 125px;
+}
+
+span#address
+{
+ background: url('../img/konvert.png') no-repeat 160px 28px; 
+ padding: 5px 0px 0px 203px;
+}
+
+ul#tabs
+{
+ margin-top:0px;
+ position: absolute;
+ right: 0px;
+ top: -35px;
+}
+
+ul#tabs li
+{
+ background: url('../img/tabs-sprite.png') no-repeat;
+ float: left;
+ height: 35px;
+ margin-right: 1px;
+ width: 70px;
+}
+
+ul#tabs li a
+{
+ display: block;
+ height: 100%;
+ text-indent: -9000px;
+ width: 100%;
+}
+
+ul#tabs li#previous
+{
+ background-position: 0px 0px;
+ width: 80px;
+}
+
+ul#tabs li#previous:hover
+{
+ background-position: 0px -40px;
+}
+
+ul#tabs li#previous:active, ul#tabs li#previous.current
+{
+ background-position: 0px -80px;
+}
+
+ul#tabs li#home
+{
+ background-position: -80px 0px;
+}
+
+ul#tabs li#home:hover
+{
+ background-position: -80px -40px;
+}
+
+ul#tabs li#home:active, ul#tabs li#home.current
+{
+ background-position: -80px -80px;
+}
+
+ul#tabs li#portfolio
+{
+ background-position: -150px 0px;
+}
+
+ul#tabs li#portfolio:hover
+{
+ background-position: -150px -40px;
+}
+
+ul#tabs li#portfolio:active, ul#tabs li#portfolio.current
+{
+ background-position: -150px -80px;
+}
+
+ul#tabs li#about
+{
+ background-position: -220px 0px;
+}
+
+ul#tabs li#about:hover
+{
+ background-position: -220px -40px;
+}
+
+ul#tabs li#about:active, ul#tabs li#portfolio.current
+{
+ background-position: -220px -80px;
+}
+
+ul#tabs li#contact
+{
+ background-position: -290px 0px;
+}
+
+ul#tabs li#contact:hover
+{
+ background-position: -290px -40px;
+}
+
+ul#tabs li#contact:active, ul#tabs li#contact.current
+{
+ background-position: -290px -80px;
+}
+
+ul#tabs li#next
+{
+ background-position: -360px 0px;
+ width: 65px;
+}
+
+ul#tabs li#next:hover
+{
+ background-position: -360px -40px;
+}
+
+ul#tabs li#next:active, ul#tabs li#next.current
+{
+ background-position: -360px -80px;
+}
+
+div#blog
+{
+ float: left;
+ margin: 30px 15px 50px 0px;
+ width: 385px;
+}
+
+div#blog h4.module-header-bar
+{
+ background: url('../img/blog-header-bar.png') no-repeat;
+ height: 28px;
+ padding-top: 10px;
+ margin-bottom: 15px;
+}
+
+div#blog div.blog-entry
+{
+ margin-bottom: 0px;
+ margin-left: 15px;
+}
+
+div#blog div.blog-entry h5
+{
+ float: left;
+ width: 200px;
+}
+
+div#blog div.blog-entry blockquote
+{
+ clear: both;
+ padding: 10px 0px 10px 15px;
+}
+
+div#blog div.blog-entry p.meta
+{
+ padding-top: 4px;
+}
+
+div#blog p#read-more-wrapper
+{
+ height: 25px;
+ width: 210px;
+ margin-top: 15px;
+ float: right;
+}
+
+div#blog p#read-more-wrapper a
+{
+ height: 100%;
+ width: 100%;
+ display: block;
+ text-indent: -9000px;
+ background: url('../img/read-more-button.png') 0px -4px no-repeat;
+}
+
+div#blog p#read-more-wrapper a:hover
+{
+ background-position: 0px -33px;
+}
+
+div#twitter
+{
+ width: 375px;
+ margin: 17px 15px 0px 415px;
+}
+
+div#twitter h4.module-header-bar
+{
+ padding-top: 23px;
+ background: url('../img/twitter-header-bar.png') no-repeat;
+ height: 43px;
+ width: 385px;
+}
+
+div#twitter div.tweet
+{
+ margin: 3px 0px 17px 30px;
+}
+
+div#twitter div.tweet img
+{
+ float: left;
+ margin-right: 15px;
+}
+
+div#twitter p#get-tweet-wrapper
+{
+ margin-top: 9px;
+ float: right;
+ height: 25px;
+ width: 210px;
+}
+
+div#twitter p#get-tweet-wrapper a
+{
+ background: url('../img/get-tweets-button.png') 0px -4px no-repeat;
+ height: 100%;
+ width: 100%;
+ display: block;
+ text-indent: -9000px;
+}
+
+div#twitter p#get-tweet-wrapper a:hover
+{
+ background-position: 0px -33px; 
+}
+
+div#footer-image
+{
+ background: url('../img/footer-image.jpg') no-repeat; 
+ width: 100%;
+ height: 50px;
+ border-top: 2px groove #ffffff;
+ border-bottom: 2px ridge #ffffff;
+}
+
+p#footer-text
+{
+ background: url('../img/content-shadow-top.png') repeat-x; 
+ height: 37px;
+ padding-top: 13px;
+ width: 100%;
+}
